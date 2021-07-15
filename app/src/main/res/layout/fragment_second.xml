@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SecondFragment">
+
+    <TextView
+        android:id="@+id/tv_first_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_fragment"
+        android:textSize="25sp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/enter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_first_fragment"
+        android:autofillHints="no"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_third_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enter_text" />
+
+</RelativeLayout>
